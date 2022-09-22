@@ -1,0 +1,55 @@
+ <!-- Responsive navbar-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container px-5">
+     <a class="navbar-brand"><strong>{{this.navBar}}</strong></a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+         class="navbar-toggler-icon"></span></button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         <button type="button" class="btn btn-outline-secondary mr-2" placement="bottom"
+           ngbPopover={{this.tituloContacto2}} popoverTitle={{this.tituloContacto1}}>
+           {{this.btnNavBar}}
+         </button>
+       </ul>
+     </div>
+   </div>
+ </nav>
+ <!-- Header-->
+ <header class="bg-dark py-5">
+   <div class="container px-5">
+     <div class="row gx-5 justify-content-center">
+       <div class="col-lg-9">
+         <div class="text-center my-3">
+           <h1 class="display-5 fw-bolder text-white mb-2">{{this.titulo}}</h1>
+           <p class="lead text-white-50 mb-4">{{this.subTitulo}}</p>
+           <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+             <a class="btn btn-outline-light btn-lg px-4" (click)="IrHome()">{{this.irHome}}</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </header>
+ <!-- Features section-->
+ <section class="py-5 border-bottom" id="features">
+   <div class="container px-5 my-5">
+     <div class="row gx-5 text-center">
+       <div class="col-lg-4 mb-5 mb-lg-0">
+         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+         <h2 class="h4 fw-bolder">{{this.boxTitulo1}}</h2>
+         <p>{{this.boxData1}}</p>
+       </div>
+       <div class="col-lg-4 mb-5 mb-lg-0">
+         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+         <h2 class="h4 fw-bolder">{{this.boxTitulo2}}</h2>
+         <p>{{this.boxData2}}</p>
+       </div>
+       <div class="col-lg-4">
+         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+         <h2 class="h4 fw-bolder">{{this.boxTitulo3}}</h2>
+         <p>{{this.boxData3}}</p>
+       </div>
+     </div>
+   </div>
+ </section>

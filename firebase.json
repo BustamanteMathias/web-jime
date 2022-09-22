@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/WebJimeBootstrap",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
